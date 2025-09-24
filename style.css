@@ -1,0 +1,83 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+canvas {
+  display: block;
+}
+.nebula-background {
+  background-image:
+    /* vertical grid lines */
+    linear-gradient(to right, rgba(255,255,255,0.28) 1px, transparent 1px),
+    /* horizontal grid lines */
+    linear-gradient(to bottom, rgba(255,255,255,0.28) 1px, transparent 1px),
+
+    /* nebula layers */
+    radial-gradient(circle at 20% 30%, #2e0854, transparent 40%),
+    radial-gradient(circle at 80% 70%, #0b3d91, transparent 40%),
+    radial-gradient(circle at 50% 50%, #000, #000 100%);
+
+  background-color: black;
+
+  /* grid spacing */
+  background-size: 80px 80px, 80px 80px, cover, cover, cover;
+  background-repeat: repeat, repeat, no-repeat, no-repeat, no-repeat;
+}
+
+
+
+.cosmos-background {
+  background: radial-gradient(circle at center,
+    #111 0%,   /* near-black core */
+    #000 60%,  /* dark edges */
+    #02010a 100% /* deep space blue */
+  );
+
+}
+
+.starry-background {
+  background-color: black;
+  background-image: 
+    radial-gradient(white 1px, transparent 1px),
+    radial-gradient(white 1px, transparent 1px);
+  background-size: 50px 50px;
+  background-position: 0 0, 25px 25px;
+}
+
+.constellation-background {
+  background-color: black;
+
+  /* Constellation grid (subtle) */
+  background-image: 
+    linear-gradient(white 1px, transparent 1px),
+    linear-gradient(90deg, white 1px, transparent 1px),
+
+    /* Stars */
+    radial-gradient(circle, rgba(255,255,255,0.9) 2px, transparent 3px),
+    radial-gradient(circle, rgba(255,255,255,0.7) 1.5px, transparent 3px),
+    radial-gradient(circle, rgba(255,255,255,0.6) 1.2px, transparent 3px),
+    radial-gradient(circle, rgba(255,255,255,0.8) 2px, transparent 3px),
+    radial-gradient(circle, rgba(255,255,255,0.5) 1px, transparent 3px);
+
+  background-position: 
+    10% 20%,   /* star 1 */
+    70% 40%,   /* star 2 */
+    50% 80%,   /* star 3 */
+    90% 10%,   /* star 4 */
+    30% 60%;   /* star 5 */
+
+  background-size: 
+    80px 80px, /* grid horizontal */
+    80px 80px, /* grid vertical */
+    5px 5px,   /* star 1 size */
+    5px 5px,   /* star 2 size */
+    5px 5px,   /* star 3 size */
+    5px 5px,   /* star 4 size */
+    5px 5px;   /* star 5 size */
+
+  background-repeat: repeat, repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+  opacity: 1;
+}
+
+
+
